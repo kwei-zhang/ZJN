@@ -1,3 +1,5 @@
+"use client"
+
 import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
 
 import {
@@ -15,9 +17,11 @@ import {
   SidebarSeparator,
 } from "@/components/ui/sidebar"
 
+
+
 import Link from "next/link"
 import { PersonalCard } from "./userCard"
-
+import { usePathname } from "next/navigation"
 // Menu items.
 const items = [
   {
@@ -26,23 +30,25 @@ const items = [
     icon: Inbox,
   },
   {
-    title: "Calendar",
-    url: "#",
+    title: "Projects",
+    url: "/projects",
     icon: Calendar,
   },
   {
-    title: "Search",
-    url: "#",
+    title: "Lists",
+    url: "/lists",
     icon: Search,
   },
   {
-    title: "Settings",
-    url: "#",
+    title: "Messages",
+    url: "/messages",
     icon: Settings,
   },
 ]
 
 export function AppSidebar() {
+  const pathname = usePathname();
+  
   return (
     <Sidebar>
       <SidebarHeader>
@@ -65,7 +71,7 @@ export function AppSidebar() {
           <SidebarGroupLabel>Home</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              <SidebarMenuItem>
+              <SidebarMenuItem className={pathname === "/" ? "rounded-md border border-purple-500" : ""}>
                 <SidebarMenuButton asChild>
                   <Link href="/">
                     <Home />
@@ -84,7 +90,7 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
+                <SidebarMenuItem key={item.title} className={pathname.includes(item.url) ? "rounded-md border bg-purple-500" : ""}>
                   <SidebarMenuButton asChild>
                     <Link href={item.url}>
                       <item.icon />

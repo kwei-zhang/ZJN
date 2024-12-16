@@ -9,10 +9,10 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 
-import { BadgeTag } from "../badge";
 import { useRouter } from 'next/navigation'
+import { BadgeTag } from "../badge";
 
-interface BlogCardProps {
+interface ProjectCardProps {
     title: string;
     description: string;
     href: string;
@@ -20,7 +20,7 @@ interface BlogCardProps {
     className?: string;
 }
 
-export const BlogCard = ({ title, description, href, tags, className }: BlogCardProps) => {
+export const ProjectCard = ({ title, description, href, tags, className }: ProjectCardProps) => {
 
     const router = useRouter();
     return (

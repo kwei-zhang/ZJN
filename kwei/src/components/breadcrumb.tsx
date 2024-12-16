@@ -9,7 +9,7 @@ import {
 
 interface BreadcrumbProps {
   name: string;
-  subName?: string;
+  subName?: string | null;
   href: string;
 }
 
