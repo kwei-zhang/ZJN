@@ -23,7 +23,7 @@ const projects = [
     },
 ]
 
-export default function Blogs() {
+export default function Projects() {
     return (
         <>
         <MotionWrapperVertical>

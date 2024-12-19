@@ -16,7 +16,7 @@ import {
 
 import { Progress } from "@/components/ui/progress"
 
-import { Payment } from "../../types/columns"
+import { Payment } from "@/types/listColumns"
 
 interface DataTableProps {
   columns: ColumnDef<Payment>[]
@@ -59,7 +59,7 @@ export function DataTable({ columns, data }: DataTableProps) {
                 data-state={row.getIsSelected() && "selected"}
               >
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id} className="m-2">
+                  <TableCell key={cell.id} className="m-2 h-10">
                     {cell.column.id === "progress" ? (
                       <Progress value={cell.getValue<number>()} />
                     ) : (

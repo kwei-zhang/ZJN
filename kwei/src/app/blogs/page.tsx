@@ -32,7 +32,7 @@ const blogs = [
     },
 ]
 
-export default function Blogs() {
+export default async function Blogs() {
     return (
         <>
         <MotionWrapperVertical>

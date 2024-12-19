@@ -16,7 +16,7 @@ export function BlogBadge() {
     return (
         <div className="flex flex-row flex-wrap justify-center gap-4 mb-4">
             {tagList.map((tag) => {
-                return <BadgeTag name={tag.name} className="bg-violet-300" />
+                return <BadgeTag name={tag.name} className="bg-violet-300" key={tag.name}/>
             })}
         </div>
     )
