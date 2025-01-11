@@ -1,6 +1,5 @@
 "use client"
-
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { GitMerge, List, Mail, GraduationCap, Home } from "lucide-react"
 
 import {
   Sidebar,
@@ -11,7 +10,6 @@ import {
   SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarSeparator,
@@ -22,27 +20,27 @@ import {
 import Link from "next/link"
 import { PersonalCard } from "./userCard"
 import { usePathname } from "next/navigation"
-// Menu items.
+
 const items = [
   {
     title: "Projects",
     url: "/projects",
-    icon: Calendar,
+    icon: GitMerge,
   },
   {
     title: "Lists",
     url: "/lists",
-    icon: Search,
+    icon: List,
   },
   {
     title: "Messages",
     url: "/messages",
-    icon: Settings,
+    icon: Mail,
   },
   {
     title: "Course works",
     url: "/courseworks",
-    icon: Inbox,
+    icon: GraduationCap,
   },
 ]
 
@@ -111,10 +109,10 @@ export function AppSidebar() {
           <SidebarMenu>
             <SidebarMenuItem>
               <div className="text-sm text-gray-500">
-                Total PV : 20778 UV : 4357
+                Total PV : # UV : #
               </div>
               <div className="text-sm text-gray-500">
-                Copyright © 2024
+                Copyright © 2025
               </div>
             </SidebarMenuItem>
           </SidebarMenu>
