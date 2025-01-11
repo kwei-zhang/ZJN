@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "John Doe",
+        "status": "pending",
+        "progress": 20,
+        "description": "John Doe is a software engineer",
+        "startDate": "2024-03-20"
+    },
+    {
+        "id": "2",
+        "name": "John Doe",
+        "status": "pending",
+        "progress": 60,
+        "description": "John Doe is a software engineer",
+        "startDate": "2024-03-20"
+    },
+    {
+        "id": "3",
+        "name": "John Doe",
+        "status": "pending",
+        "progress": 30,
+        "description": "John Doe is a software engineer",
+        "startDate": "2024-03-20"
+    }
+]

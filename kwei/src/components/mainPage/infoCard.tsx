@@ -6,7 +6,7 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-import { ZJNAvatarLarge } from "../avatar"
+import { UofTAvatar, ZJNAvatarLarge } from "../avatar"
 
 
 export function InfoCardZJN() {
@@ -14,14 +14,18 @@ export function InfoCardZJN() {
         <Card className="w-full h-full">
             <CardHeader>
                 <CardTitle>Hello, <br /> <br /> I am ZJN</CardTitle>
-                <CardDescription>Card Description</CardDescription>
+                <CardDescription></CardDescription>
             </CardHeader>
             <CardContent className="flex flex-row items-center justify-between ">
-                <p>Card Content</p>
-                <ZJNAvatarLarge />
+                <p>
+                    I am a fourth-year computer science student specializing in web development, currently based in Toronto. 
+                    My primary areas of interest include web programming, web security, and various technology stacks, particularly those leveraging APIs. 
+                    Additionally, I am passionate about contributing to open-source projects. Feel free to reach out and connect!
+                </p>    
+                <ZJNAvatarLarge/>
             </CardContent>
             <CardFooter>
-                {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-right"><path d="m5 12 14 14 4-4"/><path d="M19 18v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6"/></svg> */}
+                <p></p>
             </CardFooter>
         </Card>
     )
@@ -32,14 +36,21 @@ export function InfoCardEDU() {
         <Card className="w-full h-full">
             <CardHeader>
                 <CardTitle>Education</CardTitle>
-                <CardDescription>Card Description</CardDescription>
             </CardHeader>
-            <CardContent>
-                <p>Card Content</p>
+            <CardContent className="flex flex-row items-center justify-between ">
+                <div>I'm currently enrolled in the University of Toronto. I'm pursuing a Bachelor of Science in Computer Science, expected to graduate in 2025.
+                    I've taken a variety of courses in the past 4 years, including but not limited to:
+                    <br />
+                    <br />
+                    <ul>
+                        <li><b>Software Engineering</b></li>
+                        <li><b>Web Programming</b></li>
+                        <li><b>Web Security</b></li>
+                        <li><b>Computer Networks</b></li>
+                    </ul>
+                </div>
+                <UofTAvatar/>
             </CardContent>
-            <CardFooter>
-                <p>Card Footer</p>
-            </CardFooter>
         </Card>
     )
 }
@@ -49,14 +60,17 @@ export function InfoCardWORK() {
         <Card className="w-full h-full">
             <CardHeader>
                 <CardTitle>Work</CardTitle>
-                <CardDescription>Card Description</CardDescription>
+                <CardDescription>Co-op Experience</CardDescription>
             </CardHeader>
             <CardContent>
-                <p>Card Content</p>
+                I am currently serving as an AI Developer at the Ministry of Education in Ontario. In this capacity, I develop and maintain a variety of websites for the ministry. My core responsibilities include:
+                <br /><br />
+                <ul>
+                    <li><b>Implementing new AI features to enhance user experience</b></li>
+                    <li><b>Refactoring websites to enhance security and efficiency by using modern technology stacks</b></li>
+                    <li><b>Maintaining websites through CI/CD pipelines and regular SSL certificate updates</b></li>
+                </ul>
             </CardContent>
-            <CardFooter>
-                <p>Card Footer</p>
-            </CardFooter>
         </Card>
     )
 }

@@ -11,9 +11,18 @@ export function ZJNAvatar() {
 
 export function ZJNAvatarLarge() {
     return (
-        <Avatar className="w-24 h-24">
+        <Avatar className="w-24 h-24 m-2">
             <AvatarImage src="https://github.com/shadcn.png" />
             <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+    )
+}
+
+export function UofTAvatar() {
+    return (
+        <Avatar className="w-24 h-24 m-2 rounded-full bg-white">
+            <AvatarImage src='/UT.png' />
+            <AvatarFallback>UT</AvatarFallback>
         </Avatar>
     )
 }

@@ -3,18 +3,72 @@ import { ZJNAvatarLarge } from "../avatar"
 
 const ORBIT_IMAGES_1 = [
     {
-        src: "/HTML.png",
+        src: "/ts.svg",
         delay: "0s"
     },
     {
-        src: "/CSS.png",
+        src: "/trpc.svg",
         delay: "-2.67s"  // Offset by 1/3 of duration for 120° spacing
     },
     {
-        src: "/JS.png",
+        src: "/js.svg",
         delay: "-5.33s"  // Offset by 2/3 of duration for 240° spacing
     }
 ];
+
+const ORBIT_IMAGES_2 = [
+    {
+        src: "/react.svg",
+        delay: "0s"
+    },
+    {
+        src: "/angular.svg",
+        delay: "-2.4s"
+    },
+    {
+        src: "/redis.svg",
+        delay: "-4.8s"
+    },
+    {
+        src: "/node.svg",
+        delay: "-7.2s"
+    },
+    {
+        src: "/postgres.svg",
+        delay: "-9.6s"
+    }
+]
+
+const ORBIT_IMAGES_3 = [
+    {
+        src: "/python.svg",
+        delay: "0s"
+    },
+    {
+        src: "/java.svg",
+        delay: "-2.67s"
+    },
+    {
+        src: "/c.svg",
+        delay: "-5.33s"
+    },
+    {
+        src: "/go.svg",
+        delay: "-8s"
+    },
+    {
+        src: "/rust.svg",
+        delay: "-10.67s"
+    },
+    {
+        src: "/kotlin.svg",
+        delay: "-13.33s"
+    },
+    {
+        src: "/ruby.svg",
+        delay: "-16s"
+    }
+]
 
 export function MotionCircleSmall() {
     return (
@@ -66,7 +120,7 @@ export function MotionCircleMedium() {
                     strokeWidth="2"
                 />
                 
-                {ORBIT_IMAGES_1.map((image, index) => (
+                {ORBIT_IMAGES_2.map((image, index) => (
                     <motion.image
                         key={index}
                         href={image.src}
@@ -101,7 +155,7 @@ export function MotionCircleLarge() {
                     strokeWidth="2"
                 />
                 
-                {ORBIT_IMAGES_1.map((image, index) => (
+                {ORBIT_IMAGES_3.map((image, index) => (
                     <motion.image
                         key={index}
                         href={image.src}
