@@ -22,7 +22,6 @@ export default function Projects() {
 
         <MotionWrapperVertical delay={0.6} className="w-full">
             <div className="flex flex-row flex-wrap justify-center gap-4">
-            {/* if href is empty, then do a alert when the user clicks on the card */}
                 {projects.map((project: Project) => (
                     <ProjectCard 
                     key={project.title} 
