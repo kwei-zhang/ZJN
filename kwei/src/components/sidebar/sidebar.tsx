@@ -97,7 +97,6 @@ export function AppSidebar() {
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
-                  <SidebarMenuBadge>42</SidebarMenuBadge>
                 </SidebarMenuItem>
               ))}
 

@@ -18,13 +18,20 @@ interface ProjectCardProps {
     href: string;
     tags: string[];
     className?: string;
+    onClick?: () => void;
 }
 
 export const ProjectCard = ({ title, description, href, tags, className }: ProjectCardProps) => {
 
     const router = useRouter();
     return (
-        <Card className={className} onClick={() => router.push(href)}>
+        <Card className={className} onClick={() => {
+            if (href) {
+                router.push(href);
+            } else {
+                alert("URL unavailable for this project");
+            }
+        }}>
             <CardHeader>
                 <CardTitle>{title}</CardTitle>
             </CardHeader>

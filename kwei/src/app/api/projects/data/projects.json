@@ -1,32 +1,14 @@
 [
     {
-        "title": "Project Momentum",
-        "description": "This web application features an AI-powered scheduler that automatically organizes users' to-do lists, prioritizes tasks based on deadlines, preferences and personalized configurations.",
-        "tags": ["VUE", "TS", "MYSQL", "REDIS", "EXPRESS", "TRPC"],
-        "href": "https://github.com/UTSCC09/project-momentum"
+        "id": "1",
+        "title": "Project 1",
+        "description": "Description for project 1",
+        "tags": ["React", "TypeScript", "Next.js"]
     },
     {
-        "title": "Magnify Access",
-        "description": "A web application that allows users to create and share their granting applications with their granting providers.",
-        "tags": ["REACT", "JS", "MONGO", "EXPRESS"],
-        "href": "https://github.com/kwei-zhang/c01w24-project-MA18"
-    },
-    {
-        "title": "MindMappers",
-        "description": "A collaborative mind-mapping tool designed to facilitate real-time brainstorming and idea organization for individuals and teams.",
-        "tags": ["ANGULAR", "TS", "POSTGRES", "EXPRESS", "WS"],
-        "href": "https://github.com/UTSC-CSCC09-Programming-on-the-Web/project-vertohealthjuniors"
-    },
-    {
-        "title": "LAN Speed Test",
-        "description": "The tool offer a robust and efficient way to perform lan speed tests.",
-        "tags": ["C", "PYTHON"],
-        "href": "https://github.com/kwei-zhang/CSCD58_Final"
-    },
-    {
-        "title": "Pacman",
-        "description": "A Pacman game built with Assembly.",
-        "tags": ["ASM", "ASM64"],
-        "href": "https://github.com/kwei-zhang/CSCB58-PACMAN"
+        "id": "2",
+        "title": "Project 2",
+        "description": "Description for project 2",
+        "tags": ["Angular", "Firebase"]
     }
 ]
