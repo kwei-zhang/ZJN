@@ -6,7 +6,7 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
-import { UofTAvatar, ZJNAvatarLarge } from "../avatar"
+import { UofTAvatar, ZJNAvatarLarge, ZJNsubAvatarLarge } from "../avatar"
 
 
 export function InfoCardZJN() {
@@ -22,7 +22,7 @@ export function InfoCardZJN() {
                     My primary areas of interest include web programming, web security, and various technology stacks, particularly those leveraging APIs. 
                     Additionally, I am passionate about contributing to open-source projects. Feel free to reach out and connect!
                 </p>    
-                <ZJNAvatarLarge/>
+                <ZJNsubAvatarLarge/>
             </CardContent>
             <CardFooter>
                 <p></p>
