@@ -4,5 +4,4 @@ export interface Blog {
     description: string;
     tags: string[];
     href: string;
-    timestamp: number;
   }

@@ -1,27 +1,17 @@
-import { redisClient } from '@/lib/redis';
 import { NextResponse } from 'next/server';
-import { getAllBlogs, saveBlog } from './service';
+import { promises as fs } from 'fs';
+import path from 'path';
 
 export async function GET() {
   try {
-    return NextResponse.json(await getAllBlogs())
-  } catch (error) {
+    // get from blogs.json and parse it
+    const blogsJson = await fs.readFile(path.join(process.cwd(), 'src/app/api/blogs/contents/blogs.json'), 'utf8');
+    const blogs = JSON.parse(blogsJson);
+    return NextResponse.json(blogs);
+  } 
+  catch (error) {
     return NextResponse.json(
       { error: 'Failed to fetch blogs' },
-      { status: 500 }
-    )
-  }
-}
-
-export async function POST(request: Request) {
-  try {
-    const body = await request.json()
-    const id = await saveBlog(body)
-
-    return NextResponse.json({ id, ...body }, { status: 201 })
-  } catch (error) {
-    return NextResponse.json(
-      { error: 'Failed to create blog' },
       { status: 500 }
     )
   }

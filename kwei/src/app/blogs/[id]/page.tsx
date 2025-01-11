@@ -10,8 +10,7 @@ export default async function BlogPage(
     const data = await blog.json();
     return (
         <div>
-            <h1>Blog Page {params.id}</h1>
-            <p>{data.content}</p>
+            <h1>{data.content}</h1>
         </div>
     )
 }

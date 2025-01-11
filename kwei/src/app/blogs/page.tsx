@@ -4,33 +4,10 @@ import { Separator } from "@/components/ui/separator"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button";
 import { BlogBadge } from "@/components/blogs/blogBadge";
+import { Blog } from "@/types/blogs";
 
-const blogs = [
-    {
-        title: "Blog 1",
-        description: "Blog 1 description",
-        tags: ["HTML", "CSS", "JS"],
-        href: "/blogs/1",
-    },
-    {
-        title: "Blog 2",
-        description: "Blog 2 description",
-        tags: ["HTML", "CSS", "JS"],
-        href: "/blogs/2",
-    },
-    {
-        title: "Blog 3",
-        description: "Blog 3 description",
-        tags: ["HTML", "CSS", "JS"],
-        href: "/blogs/3",
-    },
-    {
-        title: "Blog 4",
-        description: "Blog 4 description",
-        tags: ["HTML", "CSS", "JS"],
-        href: "/blogs/4",
-    },
-]
+const URL = 'http://localhost:3000/api/blogs';
+const blogs = await fetch(URL).then(res => res.json());
 
 export default async function Blogs() {
     return (
@@ -59,7 +36,7 @@ export default async function Blogs() {
 
         <MotionWrapperVertical delay={0.8} className="w-full">
             <div className="flex flex-row flex-wrap justify-center gap-4">
-                {blogs.map((blog) => (
+                {blogs.map((blog: Blog) => (
                     <BlogCard 
                     key={blog.title} 
                     title={blog.title} 
