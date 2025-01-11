@@ -1,7 +1,6 @@
 export interface Project {
-    id: string;
-    name: string;
+    title: string;
     description: string;
-    status: string;
-    createdAt: number;
+    tags: string[];
+    href: string;
   }

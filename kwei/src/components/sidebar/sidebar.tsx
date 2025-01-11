@@ -25,11 +25,6 @@ import { usePathname } from "next/navigation"
 // Menu items.
 const items = [
   {
-    title: "Blogs",
-    url: "/blogs",
-    icon: Inbox,
-  },
-  {
     title: "Projects",
     url: "/projects",
     icon: Calendar,
@@ -43,6 +38,11 @@ const items = [
     title: "Messages",
     url: "/messages",
     icon: Settings,
+  },
+  {
+    title: "Course works",
+    url: "/courseworks",
+    icon: Inbox,
   },
 ]
 

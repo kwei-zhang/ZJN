@@ -7,7 +7,7 @@ export default function BlogsLayout({
 }>) {
     return (
         <>
-            <BreadcrumbComponent name="Blogs" href="/blogs" />
+            <BreadcrumbComponent name="Messages" href="/messages" />
             <div className="flex flex-col items-center w-full h-full">
                 {children}
             </div>

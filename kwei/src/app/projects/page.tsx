@@ -1,27 +1,9 @@
 import { ProjectCard } from "@/components/projects/projectCard";
 import { MotionWrapperVertical } from "@/components/motion";
 import { Separator } from "@/components/ui/separator"
-
-const projects = [
-    {
-        title: "Project 1",
-        description: "Project 1 description",
-        tags: ["HTML", "CSS", "JS"],
-        href: "/projects/1",
-    },
-    {
-        title: "Project 2",
-        description: "Project 2 description",
-        tags: ["HTML", "CSS", "JS"],
-        href: "/projects/2",
-    },
-    {
-        title: "Project 3",
-        description: "Project 3 description",
-        tags: ["HTML", "CSS", "JS"],
-        href: "/projects/3",
-    },
-]
+import { Project } from "@/types/projects";
+const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+const projects = await fetch(`${apiUrl}/api/projects`).then(res => res.json());
 
 export default function Projects() {
     return (
@@ -40,7 +22,7 @@ export default function Projects() {
 
         <MotionWrapperVertical delay={0.6} className="w-full">
             <div className="flex flex-row flex-wrap justify-center gap-4">
-                {projects.map((project) => (
+                {projects.map((project: Project) => (
                     <ProjectCard 
                     key={project.title} 
                     title={project.title} 
