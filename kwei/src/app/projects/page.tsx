@@ -1,11 +1,24 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import { ProjectCard } from "@/components/projects/projectCard";
 import { MotionWrapperVertical } from "@/components/motion";
 import { Separator } from "@/components/ui/separator"
 import { Project } from "@/types/projects";
-const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
-const projects = await fetch(`${apiUrl}/api/projects`).then(res => res.json());
 
 export default function Projects() {
+    const [projects, setProjects] = useState<Project[]>([]);
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            const res = await fetch(`/api/projects`);
+            const data = await res.json();
+            setProjects(data);
+        };
+
+        fetchProjects();
+    }, []);
+
     return (
         <>
         <MotionWrapperVertical>
