@@ -1,5 +1,3 @@
-import { BreadcrumbComponent } from "@/components/breadcrumb";
-
 export default function BlogsLayout({
     children,
 }: Readonly<{

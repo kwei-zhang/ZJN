@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { DataTable } from './dataTable';
 import { columns, Payment } from '@/types/listColumns';
 import { MotionWrapperVertical } from '@/components/motion';
-import moment from 'moment';
 
 async function getData(): Promise<Payment[]> {
     const response = await fetch('/api/lists');

@@ -27,6 +27,7 @@ export async function GET(request: Request) {
         },
       });
     } catch (fileError) {
+      console.error(fileError);
       return NextResponse.json(
         { error: 'PDF file not found' },
         { status: 404 }

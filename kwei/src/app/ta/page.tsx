@@ -2,12 +2,8 @@
 import { TACourseCard } from "@/components/courses/TAcourseCard";
 import { MotionWrapperVertical } from "@/components/motion";
 import { Separator } from "@/components/ui/separator";
-import { useRouter } from "next/navigation";
 
 export default function TANotes() {
-
-    const router = useRouter();
-
     return (
         <>
         <MotionWrapperVertical>

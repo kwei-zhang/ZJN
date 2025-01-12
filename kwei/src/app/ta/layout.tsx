@@ -1,5 +1,3 @@
-import { BreadcrumbComponent } from "@/components/breadcrumb";
-
 export default function BlogsLayout({
     children,
 }: Readonly<{
@@ -7,7 +5,6 @@ export default function BlogsLayout({
 }>) {
     return (
         <>
-            <BreadcrumbComponent name="TA" href="/ta" />
             <div className="flex flex-col items-center w-full h-full">
                 {children}
             </div>
