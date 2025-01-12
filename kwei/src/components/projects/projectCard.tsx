@@ -29,7 +29,7 @@ export const ProjectCard = ({ title, description, href, tags, className }: Proje
             if (href) {
                 router.push(href);
             } else {
-                alert("URL unavailable for this project");
+                alert("URL unavailable for this project due to privacy reasons.");
             }
         }}>
             <CardHeader>

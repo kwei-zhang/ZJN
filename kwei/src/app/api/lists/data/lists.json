@@ -1,26 +1,42 @@
 [
     {
+        "id": "4",
+        "name": "Graduation",
+        "status": "Working",
+        "progress": 90,
+        "description": "Preparing for my graduation.",
+        "startDate": "2020-09-01"
+    },
+    {
         "id": "1",
-        "name": "John Doe",
-        "status": "pending",
-        "progress": 20,
-        "description": "John Doe is a software engineer",
-        "startDate": "2024-03-20"
+        "name": "Open Source Project",
+        "status": "Researching",
+        "progress": 0,
+        "description": "Exploring open-source projects that align with my interests to contribute and gain hands-on experience.",
+        "startDate": "2024-10-16"
     },
     {
         "id": "2",
-        "name": "John Doe",
-        "status": "pending",
-        "progress": 60,
-        "description": "John Doe is a software engineer",
-        "startDate": "2024-03-20"
+        "name": "HTB Security Academy",
+        "status": "Learning",
+        "progress": 10,
+        "description": "Enhancing my skills in cybersecurity and penetration testing through HTB Academy labs and challenges.",
+        "startDate": "2025-01-10"
     },
     {
         "id": "3",
-        "name": "John Doe",
-        "status": "pending",
-        "progress": 30,
-        "description": "John Doe is a software engineer",
-        "startDate": "2024-03-20"
+        "name": "New Books",
+        "status": "Reading",
+        "progress": 10,
+        "description": "Exploring and selecting engaging books to expand my knowledge and interests.",
+        "startDate": "--"
+    },
+    {
+        "id": "5",
+        "name": "Exercise",
+        "status": "Working",
+        "progress": 5,
+        "description": "Establishing a consistent exercise routine to improve my physical health and overall lifestyle.",
+        "startDate": "--"
     }
 ]

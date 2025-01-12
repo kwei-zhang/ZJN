@@ -14,7 +14,11 @@ export default function Messages() {
             
         </MotionWrapperVertical>
 
-        <Separator className="w-10/12 mt-4" />
+        <Separator className="w-10/12 m-4" />
+
+        <MotionWrapperVertical delay={0.6}>
+        TBA
+        </MotionWrapperVertical>
         </>
     )
 }
