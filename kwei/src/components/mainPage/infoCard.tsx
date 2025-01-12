@@ -38,8 +38,8 @@ export function InfoCardEDU() {
                 <CardTitle>Education</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-row items-center justify-between ">
-                <div>I&#39m currently enrolled in the University of Toronto. I&#39m pursuing a Bachelor of Science in Computer Science, expected to graduate in 2025.
-                    I&#39ve taken a variety of courses in the past 4 years, including but not limited to:
+                <div>I am currently enrolled in the University of Toronto. I am pursuing a Bachelor of Science in Computer Science, expected to graduate in 2025.
+                    I have taken a variety of courses in the past 4 years, including but not limited to:
                     <br />
                     <br />
                     <ul>
