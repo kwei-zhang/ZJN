@@ -7,13 +7,14 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 import { UofTAvatar, ZJNsubAvatarLarge } from "../avatar"
+import { NameAnime } from "./nameAnime"
 
 
 export function InfoCardZJN() {
     return (
         <Card className="w-full h-full">
-            <CardHeader>
-                <CardTitle>Hello, <br /> <br /> I am ZJN</CardTitle>
+            <CardHeader className="pb-0">
+                <CardTitle>Hello, I am <NameAnime/></CardTitle>
                 <CardDescription></CardDescription>
             </CardHeader>
             <CardContent className="flex flex-row items-center justify-between ">
