@@ -1,5 +1,5 @@
 "use client"
-import { GitMerge, List, Mail, GraduationCap, Home } from "lucide-react"
+import { GitMerge, List, Mail, GraduationCap, Home, BookCheck } from "lucide-react"
 
 import {
   Sidebar,
@@ -42,6 +42,11 @@ const items = [
     url: "/courseworks",
     icon: GraduationCap,
   },
+  {
+    title: "TA Notes",
+    url: "/ta",
+    icon: BookCheck,
+  }
 ]
 
 export function AppSidebar() {
@@ -51,7 +56,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader>
         <SidebarGroup>
-          <SidebarGroupLabel>Welcome to ZJN's Website</SidebarGroupLabel>
+          <SidebarGroupLabel>Welcome to ZJN&apos;s Website</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
