@@ -5,7 +5,6 @@ import { Separator } from "@/components/ui/separator";
 import {
     Table,
     TableBody,
-    TableCaption,
     TableCell,
     TableHead,
     TableHeader,
