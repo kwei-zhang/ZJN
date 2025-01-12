@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { ReactNode } from "react"
-import { ZJNAvatarLarge } from "./avatar"
 
 interface MotionWrapperProps {
   children: ReactNode;

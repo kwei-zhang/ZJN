@@ -1,7 +1,6 @@
 import {
     Card,
     CardContent,
-    CardFooter,
     CardHeader,
   } from "@/components/ui/card"
 import { ZJNAvatar } from "../avatar"
