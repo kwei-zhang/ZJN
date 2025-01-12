@@ -30,7 +30,6 @@ export default function CSCB20Notes() {
         <Separator className="w-10/12 m-4" />
 
         <Table>
-        <TableCaption>A list of your recent invoices.</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead className="w-2/12">Week Number</TableHead>
