@@ -1,0 +1,51 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to Google VM
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.VM_HOST }} >> ~/.ssh/known_hosts
+
+    - name: Deploy to Google VM
+      run: |
+        ssh ${{ secrets.VM_USER }}@${{ secrets.VM_HOST }} << 'EOF'
+        set -e
+
+        # Navigate to the project directory or clone it if it doesn't exist
+        if [ ! -d "/path/to/your/project/.git" ]; then
+          git clone git@github.com:your-username/your-repo.git /path/to/your/project
+        fi
+
+        # Navigate to the project directory
+        cd /path/to/your/project
+
+        # Pull the latest changes
+        git reset --hard  # Discard local changes
+        git clean -fd     # Remove untracked files
+        git pull origin main
+
+        # Build the Docker image
+        docker build -t kwei .
+
+        # Stop and remove the old container (if running)
+        docker stop kwei || true
+        docker rm kwei || true
+
+        # Run the Docker container
+        docker run -d --name kwei -p 80:80 kwei
+        EOF
