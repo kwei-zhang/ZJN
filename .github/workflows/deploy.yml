@@ -40,6 +40,7 @@ jobs:
         git pull origin main
 
         # Build the Docker image
+        cd kwei
         docker build -t kwei .
 
         # Stop and remove the old container (if running)
