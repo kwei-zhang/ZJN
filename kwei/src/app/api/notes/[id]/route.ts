@@ -10,7 +10,7 @@ export async function GET(
 ) {
   try {
     const {id} = params;
-    const filePath = path.join(process.cwd(), 'src', 'app', 'api', 'notes', 'content', `${id}.md`);
+    const filePath = path.join(process.cwd(), 'src', 'app', 'api', 'notes', 'data', `${id}.md`);
     
     try {
       const content = await fs.readFile(filePath, 'utf-8');

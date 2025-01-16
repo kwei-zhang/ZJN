@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import notes from './content/Notes.json';
+import notes from './data/Notes.json';
 
 export async function GET() {
   try {
