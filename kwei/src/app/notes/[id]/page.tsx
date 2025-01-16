@@ -2,6 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm'
+import remarkGemoji from 'remark-gemoji'
+import { MotionWrapperVertical } from '@/components/motion';
 
 export default function NotePage() {
     const params = useParams();
@@ -20,8 +24,12 @@ export default function NotePage() {
     if (!note) return <div>Loading...</div>;
 
     return (
-        <div>
-            <p>{note.content}</p>
-        </div>
+        <MotionWrapperVertical>
+            <div className="prose dark:prose-invert m-6">
+                <ReactMarkdown remarkPlugins={[remarkGfm, remarkGemoji]}
+                className="line-break"
+                >{note.content}</ReactMarkdown>
+            </div>
+        </MotionWrapperVertical>
     );
 }

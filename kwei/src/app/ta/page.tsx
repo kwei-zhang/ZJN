@@ -18,10 +18,12 @@ export default function TANotes() {
 
         <Separator className="w-10/12 m-4" />
 
+        <MotionWrapperVertical delay={0.6}>
         <div className="flex flex-row justify-center">
             <TACourseCard courseCode="CSCD27" courseName="Computer and Network Security" courseDescription="This course is meant to offer Computer Science undergraduate students a broad overview of the field of computer security." /> 
             <TACourseCard courseCode="CSCB20" courseName="Introduction to Databases and Web Applications" courseDescription="A practical introduction to databases and Web app development." /> 
         </div>
+        </MotionWrapperVertical>
         </>
     )
 }
