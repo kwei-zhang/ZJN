@@ -41,7 +41,7 @@
     },
     {
         "id": "6",
-        "name": "Learn Rust",
+        "name": "Rust",
         "status": "not started",
         "progress": 0,
         "description": "Learning Rust",
@@ -49,7 +49,7 @@
     },
     {
         "id": "7",
-        "name": "Learn Go",
+        "name": "Go",
         "status": "not started",
         "progress": 0,
         "description": "Learning Go",
