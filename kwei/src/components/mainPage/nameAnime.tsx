@@ -22,13 +22,14 @@ export function NameAnime() {
             animate="visible"
             className="w-full h-full"
         >
+            {/* change color to purple-500 */}
             {/* Letter Z */}
             <motion.line
                 x1="10"
                 y1="102.5"
                 x2="305"
                 y2="102.5"
-                stroke="#00cc88"
+                stroke="#a855f7"
                 strokeWidth="50"
                 strokeLinecap="round"
                 variants={draw}
@@ -39,7 +40,7 @@ export function NameAnime() {
                 y1="110"
                 x2="12.5"
                 y2="490"
-                stroke="#00cc88"
+                stroke="#a855f7"
                 strokeWidth="50"
                 strokeLinecap="round"
                 variants={draw}
@@ -50,7 +51,7 @@ export function NameAnime() {
                 y1="497.5"
                 x2="305"
                 y2="497.5"
-                stroke="#00cc88"
+                stroke="#a855f7"
                 strokeWidth="50"
                 strokeLinecap="round"
                 variants={draw}
@@ -63,7 +64,7 @@ export function NameAnime() {
                 y1="102.5"
                 x2="805"
                 y2="102.5"
-                stroke="#00cc88"
+                stroke="#a855f7"
                 strokeWidth="50"
                 strokeLinecap="round"
                 variants={draw}
@@ -71,7 +72,7 @@ export function NameAnime() {
             />
             <motion.path
                 d="M 657.5 102.5 L 657.5 380 Q 657.5 477.5, 547.5 477.5"
-                stroke="#00cc88"
+                stroke="#a855f7"
                 strokeWidth="50"
                 strokeLinecap="round"
                 fill="transparent"
@@ -85,7 +86,7 @@ export function NameAnime() {
                 y1="110"
                 x2="1002.5"
                 y2="490"
-                stroke="#00cc88"
+                stroke="#a855f7"
                 strokeWidth="50"
                 strokeLinecap="round"
                 variants={draw}
@@ -96,7 +97,7 @@ export function NameAnime() {
                 y1="110"
                 x2="1290"
                 y2="490"
-                stroke="#00cc88"
+                stroke="#a855f7"
                 strokeWidth="50"
                 strokeLinecap="round"
                 variants={draw}
@@ -107,7 +108,7 @@ export function NameAnime() {
                 y1="490"
                 x2="1297.5"
                 y2="110"
-                stroke="#00cc88"
+                stroke="#a855f7"
                 strokeWidth="50"
                 strokeLinecap="round"
                 variants={draw}
