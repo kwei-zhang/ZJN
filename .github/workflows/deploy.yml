@@ -48,5 +48,5 @@ jobs:
         docker rm kwei || true
 
         # Run the Docker container
-        docker run -d --name kwei -p 80:80 kwei
+        docker run -d --name kwei -p 3000:3000 kwei
         EOF
