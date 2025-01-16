@@ -1,6 +1,4 @@
-FROM alpine:3.20
-
-ENV NODE_VERSION 22.13.0
+FROM node:22.13.0
 
 RUN npm install -g pnpm
 
