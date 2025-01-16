@@ -7,7 +7,8 @@ export async function GET(
   { params }: { params: { id: string } }
 ) {
   try {
-    const filePath = path.join(process.cwd(), 'src', 'app', 'api', 'notes', 'content', `${params.id}.md`);
+    const {id} = await params;
+    const filePath = path.join(process.cwd(), 'src', 'app', 'api', 'notes', 'content', `${id}.md`);
     
     try {
       const content = await fs.readFile(filePath, 'utf-8');
