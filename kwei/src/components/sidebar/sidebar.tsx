@@ -1,5 +1,5 @@
 "use client"
-import { GitMerge, List, Mail, GraduationCap, Home, BookCheck, BookOpen } from "lucide-react"
+import { GitMerge, List, GraduationCap, Home, BookCheck, BookOpen } from "lucide-react"
 
 import {
   Sidebar,

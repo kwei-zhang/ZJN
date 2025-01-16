@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+
 import { NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
@@ -7,7 +9,7 @@ export async function GET(
   { params }: { params: { id: string } }
 ) {
   try {
-    const {id} = await params;
+    const {id} = params;
     const filePath = path.join(process.cwd(), 'src', 'app', 'api', 'notes', 'content', `${id}.md`);
     
     try {
