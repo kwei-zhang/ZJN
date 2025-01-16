@@ -1,13 +1,13 @@
 import { BreadcrumbComponent } from "@/components/breadcrumb";
 
-export default function BlogsLayout({
+export default function ProjectsLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <>
-            <BreadcrumbComponent name="Messages" href="/messages" />
+            <BreadcrumbComponent name="Notes" href="/notes" />
             <div className="flex flex-col items-center w-full h-full">
                 {children}
             </div>

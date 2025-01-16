@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins, 'Proxima Nova', 'Montserrat', sans-serif;
 }
 
+.line-break {
+  white-space: pre-wrap;
+  line-height: 1;
+}
 
 @layer base {
   :root {
@@ -81,5 +85,32 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  ul {
+    @apply list-circle;
+  }
+  blockquote {
+    @apply border-l-4 border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 pl-4 rounded-md;
+  }
+  pre {
+    @apply border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 p-4 my-4 rounded-md font-mono text-sm overflow-x-auto;
+  }
+}
+
+@layer components {
+  .list-circle {
+    list-style-type: circle;
   }
 }

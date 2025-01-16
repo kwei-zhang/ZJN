@@ -1,5 +1,5 @@
 "use client"
-import { GitMerge, List, Mail, GraduationCap, Home, BookCheck } from "lucide-react"
+import { GitMerge, List, Mail, GraduationCap, Home, BookCheck, BookOpen } from "lucide-react"
 
 import {
   Sidebar,
@@ -33,14 +33,14 @@ const items = [
     icon: List,
   },
   {
-    title: "Messages",
-    url: "/messages",
-    icon: Mail,
-  },
-  {
     title: "Course works",
     url: "/courseworks",
     icon: GraduationCap,
+  },
+  {
+    title: "Notes",
+    url: "/notes",
+    icon: BookOpen,
   },
   {
     title: "TA Notes",
