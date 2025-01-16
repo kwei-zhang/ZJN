@@ -27,12 +27,12 @@ jobs:
         set -e
 
         # Navigate to the project directory or clone it if it doesn't exist
-        if [ ! -d "/path/to/your/project/.git" ]; then
-          git clone git@github.com:your-username/your-repo.git /path/to/your/project
+        if [ ! -d "ZJN/.git" ]; then
+          git clone https://github.com/kwei-zhang/ZJN.git
         fi
 
         # Navigate to the project directory
-        cd /path/to/your/project
+        cd ZJN
 
         # Pull the latest changes
         git reset --hard  # Discard local changes
