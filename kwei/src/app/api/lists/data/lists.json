@@ -38,5 +38,21 @@
         "progress": 5,
         "description": "Establishing a consistent exercise routine to improve my physical health and overall lifestyle.",
         "startDate": "--"
+    },
+    {
+        "id": "6",
+        "name": "Learn Rust",
+        "status": "not started",
+        "progress": 0,
+        "description": "Learning Rust",
+        "startDate": "--"
+    },
+    {
+        "id": "7",
+        "name": "Learn Go",
+        "status": "not started",
+        "progress": 0,
+        "description": "Learning Go",
+        "startDate": "--"
     }
 ]
