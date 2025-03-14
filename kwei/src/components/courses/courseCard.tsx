@@ -18,11 +18,7 @@ interface CourseCardProps {
 export function CourseCard({ courseCode, courseName, courseDescription }: CourseCardProps){
     const router = useRouter();
     return (
-        <Card className="w-1/3 m-2" onClick={() => {
-            alert("not yet available");
-            return;
-            router.push(`/courseworks/${courseCode}`);
-        }}>
+        <Card className="w-1/3 m-2">
             <CardHeader>
                 <CardTitle>{courseCode} - {courseName}</CardTitle>
             </CardHeader>
