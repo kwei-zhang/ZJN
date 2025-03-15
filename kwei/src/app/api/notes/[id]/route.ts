@@ -9,7 +9,7 @@ export async function GET(
   { params }: { params: { id: string } }
 ) {
   try {
-    const {id} = params;
+    const { id } = await params;
     const filePath = path.join(process.cwd(), 'src', 'app', 'api', 'notes', 'data', `${id}.md`);
     
     try {
