@@ -2,19 +2,25 @@
     {
         "title": "Project Momentum",
         "description": "This web application features an AI-powered scheduler that automatically organizes users' to-do lists, prioritizes tasks based on deadlines, preferences and personalized configurations.",
-        "tags": ["VUE", "TS", "MYSQL", "REDIS", "TSNODE", "TRPC"],
+        "tags": ["VUE", "TS", "MYSQL", "REDIS", "TSNODE", "TRPC", "OPENAI", "GOOGLECLOUD"],
         "href": "https://github.com/UTSCC09/project-momentum"
+    },
+    {
+        "title": "MindMappers",
+        "description": "A collaborative mind-mapping tool designed to facilitate real-time brainstorming and idea organization for individuals and teams.",
+        "tags": ["ANGULAR", "TS", "POSTGRES", "NODE", "WEBSOCKET", "OPENAI", "AWS-EC2"],
+        "href": ""
+    },
+    {
+        "title": "D-TicketMaster",
+        "description": "A web3 application that allows users to buy and sell tickets for events. Deployed on buildbear network that is forked from ethereum mainnet.",
+        "tags": ["NEXTJS", "METAMASK", "HARDHAT", "SOLIDITY", "ETHERS", "ETHEREUM", "CHAI", "MOCHA"],
+        "href": "https://d-ticketmaster-ashy.vercel.app/"
     },
     {
         "title": "Magnify Access",
         "description": "A web application that allows users to create and share their granting applications with their granting providers.",
         "tags": ["REACT", "JS", "MONGO", "NODE"],
-        "href": ""
-    },
-    {
-        "title": "MindMappers",
-        "description": "A collaborative mind-mapping tool designed to facilitate real-time brainstorming and idea organization for individuals and teams.",
-        "tags": ["ANGULAR", "TS", "POSTGRES", "NODE", "WEBSOCKET"],
         "href": ""
     },
     {
