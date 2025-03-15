@@ -1,8 +1,9 @@
 [
     {
-        "filename": "Myfirstnote",
-        "title": "My first note",
-        "description": "This is my first note",
-        "tags": ["note", "first", "hello"]
+        "filename": "theFuck",
+        "title": "The F**k terminal tool",
+        "description": "The F**k terminal tool is a tool that allows you to fix your mistakes in the terminal.",
+        "date": "2025-03-15",
+        "tags": ["terminal"]
     }
 ]

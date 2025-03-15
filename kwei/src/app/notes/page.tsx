@@ -39,9 +39,9 @@ export default function Projects() {
 
         <Separator className="w-10/12 my-4" />
 
-        <MotionWrapperVertical delay={0.6} className="w-full">
+        <MotionWrapperVertical delay={0.6} className="w-10/12">
             {notes.map((note: Note, index) => (
-                <NoteCard key={index} title={note.title} description={note.description} href={`/notes/${note.filename}`} tags={note.tags} />
+                <NoteCard key={index} title={note.title} description={note.description} href={`/notes/${note.filename}`} date={note.date} tags={note.tags} />
             ))}
         </MotionWrapperVertical>
         </>

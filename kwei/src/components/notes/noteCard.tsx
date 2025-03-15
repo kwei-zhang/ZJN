@@ -19,9 +19,10 @@ interface NoteCardProps {
     tags: string[];
     className?: string;
     onClick?: () => void;
+    date: string;
 }
 
-export const NoteCard = ({ title, description, href, tags, className }: NoteCardProps) => {
+export const NoteCard = ({ title, description, href, tags, className, date }: NoteCardProps) => {
 
     const router = useRouter();
     return (
@@ -34,6 +35,7 @@ export const NoteCard = ({ title, description, href, tags, className }: NoteCard
         }}>
             <CardHeader>
                 <CardTitle>{title}</CardTitle>
+                <CardDescription>{date}</CardDescription>
             </CardHeader>
             <CardContent>
                 <CardDescription>{description}</CardDescription>
