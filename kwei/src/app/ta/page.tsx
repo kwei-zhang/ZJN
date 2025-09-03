@@ -19,9 +19,11 @@ export default function TANotes() {
         <Separator className="w-10/12 m-4" />
 
         <MotionWrapperVertical delay={0.6}>
-        <div className="flex flex-row justify-center">
-            <TACourseCard courseCode="CSCD27" courseName="Computer and Network Security" courseDescription="This course is meant to offer Computer Science undergraduate students a broad overview of the field of computer security." /> 
-            <TACourseCard courseCode="CSCB20" courseName="Introduction to Databases and Web Applications" courseDescription="A practical introduction to databases and Web app development." /> 
+        <div className="flex flex-row flex-wrap justify-center m-4">
+            <TACourseCard courseCode="CSCD27_F24" courseName="Computer and Network Security" courseDescription="This course is meant to offer Computer Science undergraduate students a broad overview of the field of computer security." /> 
+            <TACourseCard courseCode="CSCB20_W25" courseName="Introduction to Databases and Web Applications" courseDescription="A practical introduction to databases and Web app development." /> 
+            <TACourseCard courseCode="CSCD27_F25" courseName="Computer and Network Security" courseDescription="This course is meant to offer Computer Science undergraduate students a broad overview of the field of computer security." /> 
+            <TACourseCard courseCode="CSCD01_F25" courseName="Engineering Large Software Systems" courseDescription="An introduction to the theory and practice of large-scale software system design." /> 
         </div>
         </MotionWrapperVertical>
         </>
