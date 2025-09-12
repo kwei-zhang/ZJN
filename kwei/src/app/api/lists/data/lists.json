@@ -1,11 +1,19 @@
 [
     {
         "id": "4",
-        "name": "Graduation",
-        "status": "Working",
-        "progress": 90,
+        "name": "Bachelor of Science in Computer Science",
+        "status": "Completed",
+        "progress": 100,
         "description": "Preparing for my graduation.",
         "startDate": "2020-09"
+    },
+    {
+        "id": "5",
+        "name": "Master of Engineering in Electrical & Computer Engineering",
+        "status": "Ongoing",
+        "progress": 10,
+        "description": "Preparing for my graduation.",
+        "startDate": "2025-09"
     },
     {
         "id": "1",

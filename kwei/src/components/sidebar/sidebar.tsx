@@ -27,11 +27,11 @@ const items = [
     url: "/projects",
     icon: GitMerge,
   },
-  {
-    title: "Lists",
-    url: "/lists",
-    icon: List,
-  },
+  // {
+  //   title: "Lists",
+  //   url: "/lists",
+  //   icon: List,
+  // },
   {
     title: "Course works",
     url: "/courseworks",

@@ -40,7 +40,7 @@ export function InfoCardEDU() {
             </CardHeader>
             <CardContent className="flex flex-row items-center justify-between ">
                 <div>I am currently enrolled in the <b>University of Toronto</b>. I have completed Bachelor of Science in <b>Computer Science</b>, currently pursuing a Master of Engineering in <b>Electrical & Computer Engineering</b>.
-                    I have taken a variety of courses in the past few years, my favorite ones are:
+                    Here are some of my favorite topics:
                     <br />
                     <br />
                     <ul>
