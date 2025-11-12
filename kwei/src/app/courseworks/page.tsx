@@ -41,6 +41,8 @@ export default function Courseworks() {
                 <CourseCard courseCode="CSCD27" courseName="Computer and Network Security" courseDescription="Public and symmetric key algorithms and their application; key management and certification; authentication protocols; digital signatures and data integrity..."/>
                 <CourseCard courseCode="CSCD58" courseName="Computer Networks" courseDescription="Computer communication network principles and practice."/>
                 <CourseCard courseCode="CSCD84" courseName="Artificial Intelligence" courseDescription="A study of the theories and algorithms of Artificial Intelligence."/>
+                <CourseCard courseCode="ECE1508" courseName="Applied Deep Learning" courseDescription="The course provides a fundamental understanding on Computational Learning, its functionality, and its deployment towards building information processing units."/>
+                <CourseCard courseCode="MIE1628" courseName="Cloud-Based Data Analytics" courseDescription="The course is designed to equip students with fundamental concepts and practical skills in Cloud-based Data Analytics. "/>
             </div>
         </MotionWrapperVertical>
         </>
