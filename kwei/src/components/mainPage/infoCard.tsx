@@ -19,15 +19,12 @@ export function InfoCardZJN() {
             </CardHeader>
             <CardContent className="flex flex-row items-center justify-between ">
                 <p className="mr-10">
-                    I am a first year Master student in Electrical & Computer Engineering, currently based in Toronto. 
-                    My primary areas of interest include computer security, machine learning and various technology stacks. 
-                    Additionally, I am passionate about contributing to open-source projects. Feel free to reach out and connect!
+                    I am a Master student majoring in Electrical & Computer Engineering.
+                    My primary areas of interest include computer security, distributed systems and data science.
+                    Other than that, I am also interested in open-source software and gaming.
                 </p>
                 {/* <ZJNsubAvatarLarge/> */}
             </CardContent>
-            <CardFooter>
-                <p></p>
-            </CardFooter>
         </Card>
     )
 }
@@ -44,7 +41,7 @@ export function InfoCardEDU() {
                     <br />
                     <br />
                     <ul>
-                        <li><b>Computer Security</b></li>
+                        <li><b>Computer and Network Security</b></li>
                         <li><b>Blockchain Technology</b></li>
                         <li><b>Distributed Software Systems</b></li>
                         <li><b>Artificial Intelligence</b></li>
@@ -56,20 +53,17 @@ export function InfoCardEDU() {
     )
 }
 
-export function InfoCardWORK() {
+export function InfoCardContact() {
     return (
         <Card className="w-full h-full">
             <CardHeader>
-                <CardTitle>Work</CardTitle>
-                <CardDescription>Experience</CardDescription>
+                <CardTitle>Contact</CardTitle>
+                <CardDescription>Here are some of my contact information</CardDescription>
             </CardHeader>
             <CardContent>
-                I am currently seeking for internship opportunities. Here are some of my previous experiences:
-                <br /><br />
-                <ul>
-                    <li><b>AI Developer at the Ministry of Education Ontario</b></li>
-                    <li><b>Teaching Assistant at the University of Toronto</b></li>
-                </ul>
+                <li><b>Email:</b> <a href="mailto:zhangkw0622@gmail.com">zhangkw0622@gmail.com</a></li>
+                <li><b>GPG Key:</b> <a href="https://keys.openpgp.org/search?q=zhangkw0622@gmail.com">OpenPGP Key</a></li>
+                <li><b>Linkedin:</b> <a href="https://www.linkedin.com/in/kaiwei-zhang-087810269/">Kaiwei Zhang</a></li>
             </CardContent>
         </Card>
     )

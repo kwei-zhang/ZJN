@@ -18,7 +18,7 @@ export function PersonalCard() {
             <CardContent className="flex flex-row items-center justify-between">
                 <AtSign onClick={() => window.open('mailto:zhangkw0622@gmail.com')}/>
                 <Github onClick={() => window.open('https://github.com/kwei-zhang')}/>
-                <Linkedin onClick={() => window.open('https://www.linkedin.com/in/kevin-zhang-087810269/')}/>
+                <Linkedin onClick={() => window.open('https://www.linkedin.com/in/kaiwei-zhang-087810269/')}/>
             </CardContent>
         </Card>
     )

@@ -7,7 +7,7 @@ import {
   } from "@/components/ui/carousel"
 import { InfoCardZJN } from "./infoCard"
 import { InfoCardEDU } from "./infoCard"
-import { InfoCardWORK } from "./infoCard"
+import { InfoCardContact } from "./infoCard"
 
 export function CarouselComponent() {
     return(<Carousel
@@ -25,7 +25,7 @@ export function CarouselComponent() {
             <InfoCardEDU />
           </CarouselItem>
           <CarouselItem className="basis">
-            <InfoCardWORK />
+            <InfoCardContact />
           </CarouselItem>
         </CarouselContent>
         <CarouselPrevious />
