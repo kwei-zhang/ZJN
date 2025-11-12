@@ -4,8 +4,8 @@ import { SidebarProvider } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/sidebar/sidebar"
 
 export const metadata: Metadata = {
-  title: "ZJN",
-  description: "ZJN's portfolio",
+  title: "Kaiwei Zhang",
+  description: "Kaiwei Zhang's portfolio",
 };
 
 export default function RootLayout({
