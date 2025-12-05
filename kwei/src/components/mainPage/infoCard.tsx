@@ -28,7 +28,7 @@ export function InfoCardZJN() {
         </Card>
     )
 }
-
+ 
 export function InfoCardEDU() {
     return (
         <Card className="w-full h-full">
