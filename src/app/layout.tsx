@@ -49,6 +49,7 @@ export default function RootLayout({
           <SiteFooter />
         </ThemeProvider>
       </body>
+      <Analytics />
     </html>
   );
 }
