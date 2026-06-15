@@ -75,7 +75,7 @@ export const projects: Project[] = [
     description:
       "A from-scratch language modeling project implementing core LLM components, including tokenization, transformer modules, training utilities, and evaluation workflows.",
     tech: ["Python", "PyTorch", "Fine-tuning", "LLM"],
-    github: "https://github.com/kwei-learning/",
+    github: "https://github.com/orgs/kwei-learning/repositories",
     demo: "",
     category: "course",
   }

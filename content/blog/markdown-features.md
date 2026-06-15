@@ -1,8 +1,8 @@
 ---
 title: "Everything This Blog Can Render"
-date: "2026-06-05"
+date: "2026-06-20"
 description: "A kitchen-sink tour of the markdown features supported by this blog."
-tags: ["meta", "markdown"]
+tags: ["markdown"]
 ---
 
 This post is a living test of the markdown features this blog supports.
