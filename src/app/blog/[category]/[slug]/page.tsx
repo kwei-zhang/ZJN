@@ -8,19 +8,27 @@ import rehypeHighlight from "rehype-highlight";
 
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { formatDate, getAllPosts, getPostBySlug } from "@/lib/posts";
+import {
+  formatDate,
+  getAllPosts,
+  getCategory,
+  getPostBySlug,
+} from "@/lib/posts";
 
 export function generateStaticParams() {
-  return getAllPosts().map((post) => ({ slug: post.slug }));
+  return getAllPosts().map((post) => {
+    const [category, slug] = post.slug.split("/");
+    return { category, slug };
+  });
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ category: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const { category, slug } = await params;
+  const post = getPostBySlug(`${category}/${slug}`);
   if (!post) return {};
   return {
     title: post.title,
@@ -31,21 +39,23 @@ export async function generateMetadata({
 export default async function BlogPostPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ category: string; slug: string }>;
 }) {
-  const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const { category, slug } = await params;
+  const post = getPostBySlug(`${category}/${slug}`);
   if (!post) notFound();
+
+  const categoryLabel = getCategory(category)?.label ?? category;
 
   return (
     <article className="space-y-8">
       <div className="space-y-4">
         <Link
-          href="/blog"
+          href={`/blog/${category}`}
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
         >
           <ArrowLeft className="size-4" />
-          Back to blog
+          Back to {categoryLabel}
         </Link>
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
           {post.title}
@@ -59,7 +69,10 @@ export default async function BlogPostPage({
           </time>
           <div className="flex flex-wrap gap-1.5">
             {post.tags.map((tag) => (
-              <Link key={tag} href={`/blog?tag=${encodeURIComponent(tag)}`}>
+              <Link
+                key={tag}
+                href={`/blog/${category}?tag=${encodeURIComponent(tag)}`}
+              >
                 <Badge
                   variant="outline"
                   className="transition-colors hover:bg-accent"

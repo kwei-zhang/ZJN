@@ -30,7 +30,10 @@ export function PostCard({ post }: { post: PostMeta }) {
         </p>
         <div className="relative z-10 flex flex-wrap gap-1.5">
           {post.tags.map((tag) => (
-            <Link key={tag} href={`/blog?tag=${encodeURIComponent(tag)}`}>
+            <Link
+              key={tag}
+              href={`/blog/${post.category}?tag=${encodeURIComponent(tag)}`}
+            >
               <Badge
                 variant="outline"
                 className="transition-colors hover:bg-accent"

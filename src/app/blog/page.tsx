@@ -1,26 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
-import { PostCard } from "@/components/post-card";
-import { getAllPosts, getAllTags } from "@/lib/posts";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { getPostsByCategory } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "Writing about software, school, and whatever I'm learning.",
 };
 
-export default async function BlogPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ tag?: string }>;
-}) {
-  const { tag } = await searchParams;
-  const allPosts = getAllPosts();
-  const tags = getAllTags();
-  const posts = tag
-    ? allPosts.filter((post) => post.tags.includes(tag))
-    : allPosts;
+export default function BlogPage() {
+  const categories = getPostsByCategory();
 
   return (
     <div className="space-y-8">
@@ -31,33 +27,31 @@ export default async function BlogPage({
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-2">
-        <Link href="/blog">
-          <Badge
-            variant={tag ? "outline" : "default"}
-            className="transition-colors"
-          >
-            All
-          </Badge>
-        </Link>
-        {tags.map((t) => (
-          <Link key={t} href={`/blog?tag=${encodeURIComponent(t)}`}>
-            <Badge
-              variant={tag === t ? "default" : "outline"}
-              className="transition-colors"
-            >
-              {t}
-            </Badge>
-          </Link>
-        ))}
-      </div>
-
-      {posts.length === 0 ? (
-        <p className="text-muted-foreground">No posts found for this tag.</p>
+      {categories.length === 0 ? (
+        <p className="text-muted-foreground">No posts yet.</p>
       ) : (
-        <div className="grid gap-5">
-          {posts.map((post) => (
-            <PostCard key={post.slug} post={post} />
+        <div className="grid gap-5 sm:grid-cols-2">
+          {categories.map((category) => (
+            <Card
+              key={category.slug}
+              className="relative transition-shadow hover:shadow-md"
+            >
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between text-lg">
+                  <Link
+                    href={`/blog/${category.slug}`}
+                    className="after:absolute after:inset-0"
+                  >
+                    {category.label}
+                  </Link>
+                  <ArrowRight className="size-4 text-muted-foreground" />
+                </CardTitle>
+                <CardDescription>
+                  {category.posts.length}{" "}
+                  {category.posts.length === 1 ? "post" : "posts"}
+                </CardDescription>
+              </CardHeader>
+            </Card>
           ))}
         </div>
       )}
