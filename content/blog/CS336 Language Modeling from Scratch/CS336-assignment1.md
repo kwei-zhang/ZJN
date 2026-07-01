@@ -36,3 +36,5 @@ Until the vocabulary reaches `vocab_size`, we perform the following steps:
 3. Rewrite every sequence containing the selected pair by replacing `a, b` with `merged`.
 
 A naive implementation recomputes all pair counts from scratch after every merge. Although this approach is simple, it is too slow for large corpora because each iteration scans the entire dataset again. To make the merge loop more efficient, I used a max heap to keep track of candidate token pairs by frequency. At each iteration, the heap provides the current highest-frequency pair, while affected counts are updated after the merge instead of recomputing every pair globally.
+
+## Transformer Language Model
