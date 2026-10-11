@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-4 pt-1 text-muted-foreground">
           <a
-            href="https://github.com/kaiwei"
+            href="https://github.com/kwei-zhang/"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
@@ -54,7 +54,7 @@ export default function Home() {
             <GithubIcon className="size-5" />
           </a>
           <a
-            href="https://linkedin.com/in/kaiwei"
+            href="https://www.linkedin.com/in/kwei-zhang/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
